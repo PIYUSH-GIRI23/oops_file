@@ -6,7 +6,9 @@ public:
     string str;
     string copiedStr;
     string concatenatedStr;
-    StringManipulator(const string& initialString) : str(initialString) {}
+    StringManipulator(const string& initialString){
+        str = initialString;
+    }
     void copyString() {
         int i = 0;
         while(str[i] != '\0') {
